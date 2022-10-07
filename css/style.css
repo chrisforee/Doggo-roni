@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* ======> navBar elements <====== */
+#navBar{
+    padding: 10px;
+    /* margin: 25px; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-family:'BhuTuka Expanded One', cursive;
+    background-image: url("/resources/flag.svg");
+    background-size:cover;
+    border: 2px solid black;
+}
+#doggoRoni{
+    font-size: 3rem;
+}
+#doggo,#doggo1,#doggo2,#doggo3{
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+/* ==========> Main container elements <=========== */
+#mainCard{
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
+#createBlockForm{
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid black;
+    border-radius: 2rem;
+    background-color:rgb(173,221,251,.5);
+    box-shadow: 5px 5px 3px grey;
+}
+#doggoSpan{
+    font-family:'BhuTuka Expanded One', cursive;
+    animation: blinker 3s linear infinite;
+}
+@keyframes blinker {  
+    50% { opacity: 0; }
+}
+/* ===========> Doggos Added elements <============*/
+.doggosAdded{
+    display: flex;
+    margin: 25px;
+}
+.dogImage{
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+
