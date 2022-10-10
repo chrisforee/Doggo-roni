@@ -12,7 +12,7 @@
     justify-content:space-between;
     align-items: center;
     font-family:'BhuTuka Expanded One', cursive;
-    background-image: url("/resources/flag.svg");
+    background-image: url("../resources/flag.svg");
     background-size:cover;
     border: 2px solid black;
 }
@@ -25,9 +25,9 @@
     border: 1px solid black;
     border-radius: 50%;
 }
-.contactInfo{
+/* .contactInfo{
     display:;
-}
+} */
 
 /* ==========> Main container elements <=========== */
 #mainCard{
@@ -83,7 +83,7 @@ padding: 10px;
 margin: 25px;
 width: 800px;
 height: 800px;
-background-image: url("/resources/blankPizza.png");
+background-image: url("../resources/blankPizza.png");
 background-size:cover;
 background-position: center;
 }
