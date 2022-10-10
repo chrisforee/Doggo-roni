@@ -21,15 +21,18 @@
         <img id="doggo1" src="/resources/doggo3.png" alt="cartoon dog">
         <img id="doggo2" src="/resources/doggo.png" alt="cartoon dog">
         <img id="doggo3" src="/resources/doggo4.webp" alt="cartoon dog">
+        <div id="contactInfo">
+            <h3><a href="https://www.linkedin.com/in/chris4e">LinkedIn</a></h3>
+            <h3><a href="https://github.com/chrisforee/Doggo-roni">GitHub</a></h3>
+        </div>
     </div>
     <div id="mainCard">
-        <div id="createBlockForm">
+        <div id="createFormBlock">
             <form class="dogImagesForm" onsubmit="doggoFormHandler(event)">
                 <div id="step1">
                     <h2 class="text-center">Create <span class="fw-bolder" id="doggoSpan">Doggo-roni Pizza</span></h2>
                     <hr>
-                    <h3 class="fst-italic text-center">Step 1.</h3>
-                    <h4 class="text-center mb-4">How many Doggo-roni?</h4>
+                    <h3 class="fst-italic text-center">Step 1) How many Doggo-roni?</h3>
                     <div class="input-group mb-3">
                         <span class="input-group-text">I want</span>
                         <select onchange="addDoggo()" class="form-select text-center" id="numberOfDogs" name="numberOfDogs">
@@ -40,30 +43,38 @@
                             <option value="4">4</option>
                             <option value="5">5</option>
                             <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
                         </select>
                         <span class="input-group-text">Doggo-roni</span>
                     </div>
                 </div>
+                <div class="doggosAdded">
+                </div>
                 <hr>
                 <div id="step2">
-                    <h3 class="fst-italic text-center">Step 2.</h3>
-                    <h4 class="text-center">Click Submit!</h4>
+                    <h3 class="fst-italic text-center">Step 2) Click Submit!</h3>
                     <div class="d-flex justify-content-center">
                         <button class="btn btn-info">Submit</button>
+                    </div>
+                    <div class="errorDiv">
                     </div>
                 </div>
                 <hr>
                 <div id="step3">
-                    <h3 class="fst-italic text-center">Step 3.</h3>
-                    <h4 class="text-center">Reset to create another!</h4>
+                    <h3 class="fst-italic text-center">Step 3) Reset to create another!</h3>
                     <div class="d-flex justify-content-center">
-                        <button class="btn btn-danger">Reset</button>
+                        <button onclick="window.location.reload()" class="btn btn-danger">Reset</button>
                     </div>
                 </div>
             </form>
         </div>
-    </div>
-    <div class="doggosAdded">
+        <div class="pizzaBlock">
+        </div>
     </div>
     <script src="/js/script.js"></script>
 </body>

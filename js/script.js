@@ -1,43 +1,51 @@
+// Dog image counter in Create Form
 function addDoggo(){
-    console.log("addDoggo function success")
     let numberOfDoggos = document.querySelector("#numberOfDogs").value;
-    console.log(`${numberOfDoggos} doggos added`);
     let doggosDiv = document.querySelector(".doggosAdded");
     doggosDiv.innerHTML = "";
     let doggoCounter = numberOfDoggos;
     while(doggoCounter > 0){
-        doggoCounter--;
         doggosDiv.innerHTML += 
-        `<div class ="dogImageContainer">
-        <img src="/resources/doggo.png" alt="Dog image" class="dogImage"/>
+        `<div class ="createDogImageContainer">
+        <img src="/resources/doggo.png" alt="cartoon dog" class="dogImage"/>
         </div>`;
+        doggoCounter--;
     }
+    console.log("addDoggo function success")
+    console.log(`${numberOfDoggos} doggos added`);
 }
 
-
-async function handleDogFormRequest(event){
+// Dogs API call 
+async function doggoFormHandler(event){
     event.preventDefault();
-
     const numberOfDogs = document.querySelector("#numberOfDogs").value;
-
+    const errorDiv = document.querySelector(".errorDiv");
+    errorDiv.innerHTML = "";
+    if(numberOfDogs == 0 || null){
+        errorDiv.innerHTML += `
+        <div class ="errorDiv">
+        <p>Must select at least 1 Doggo-roni</p>
+        </div>`
+    }
+    else{
     const URL = `https://dog.ceo/api/breeds/image/random/${numberOfDogs}`
-                //"https://dog.ceo/api/breeds/image/random" + numberOfDogs   <========Same as use of backticks in line above, both work
-
     const settings = {
         method : "GET"
-    };
-
+    }
     const response = await fetch(URL, settings);
     const data = await response.json();
-
-    const resultsDiv = document.querySelector(".results");
-    resultsDiv.innerHTML = "";
-
+    const pizzaDiv = document.querySelector(".pizzaBlock");
+    pizzaDiv.innerHTML = "";
+    
     for(const image of data.message){
-        resultsDiv.innerHTML += `
-            <div class ="dogImageContainer">
-                <img src="${image}" alt="Dog image" class="dogImage"/>
-            </div>
+        pizzaDiv.innerHTML += `
+        <div class ="pizzaDogImgContainer${Math.floor(Math.random() * (17-1) + 1)}">
+        <img src="${image}" alt="Dog image" class="pizzaDogImage"/>
+        </div>
         `;
-    }     
+}    
+    console.log("Dogs API success");
+    console.log(`${numberOfDogs} doggos added to pizza`);
+} 
 }
+
