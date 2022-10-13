@@ -5,6 +5,20 @@
 
 Project to create a simple webpage utilizing HTML, CSS, Javascript and bootstrap elements. Doggo-roni are randomly populated on the pizza through user input and the usage of the Dog CEO API. Generate a different pie every time!
 
+### Contributions
+
+Contributions are welcome. 
+
+1. Fork this repo.
+
+2. Clone your repo.
+
+3. Star this repo.
+
+### License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
 ### Running the project
 
 Environments: 
@@ -26,20 +40,6 @@ Verifying API import results through [POSTMAN](https://www.postman.com/downloads
 ***-----> Not yet implemented <----- Testing through MySql for Login/Registration.***
 
 ***-----> Not yet implemented <----- Testing through Spring Boot and MySql for JAVA Login/Registration.***
-
-### Contributions
-
-Contributions are welcome. 
-
-1. Fork this repo.
-
-2. Clone your repo.
-
-3. Star this repo.
-
-### License
-
-[MIT](https://choosealicense.com/licenses/mit/)
 
 ### Project Status
 
