@@ -3,7 +3,7 @@
 
 ## Description
 
-Project to create a simple webpage utilizing HTML, CSS, Javascript and bootstrap elements. Doggo-roni are randomly populated on the pizza through user input and through the usage of the Dog CEO API. Generate a different pie every time!
+Project to create a simple webpage utilizing HTML, CSS, Javascript and bootstrap elements. Doggo-roni are randomly populated on the pizza through user input and the usage of the Dog CEO API. Generate a different pie every time!
 
 ### Running the project
 
