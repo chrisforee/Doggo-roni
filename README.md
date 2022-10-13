@@ -1,7 +1,7 @@
 # Doggo-roni Pizza!![Screen Shot 2022-10-10 at 2 24 51 PM](https://user-images.githubusercontent.com/96786151/194939391-02d93dd5-54b2-4878-8f40-e77f662bebb1.png)
 
 
-## Description
+### Description
 
 Project to create a simple webpage utilizing HTML, CSS, Javascript and bootstrap elements. Doggo-roni are randomly populated on the pizza through user input and the usage of the Dog CEO API. Generate a different pie every time!
 
