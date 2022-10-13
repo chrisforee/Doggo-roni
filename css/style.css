@@ -25,10 +25,15 @@
     border: 1px solid black;
     border-radius: 50%;
 }
-/* .contactInfo{
-    display:;
-} */
-
+#contactInfo{
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.infoLink{
+    text-decoration: none;
+    color: black;
+}
 /* ==========> Main container elements <=========== */
 #mainCard{
     display: flex;

@@ -7,7 +7,7 @@ function addDoggo(){
     while(doggoCounter > 0){
         doggosDiv.innerHTML += 
         `<div class ="createDogImageContainer">
-        <img src="/resources/doggo.png" alt="cartoon dog" class="dogImage"/>
+        <img src="resources/doggo.png" alt="cartoon dog" class="dogImage"/>
         </div>`;
         doggoCounter--;
     }
@@ -36,7 +36,7 @@ async function doggoFormHandler(event){
     const data = await response.json();
     const pizzaDiv = document.querySelector(".pizzaBlock");
     pizzaDiv.innerHTML = "";
-    
+
     for(const image of data.message){
         pizzaDiv.innerHTML += `
         <div class ="pizzaDogImgContainer${Math.floor(Math.random() * (17-1) + 1)}">
