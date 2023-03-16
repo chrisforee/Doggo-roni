@@ -15,41 +15,30 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
-    <div id="navBar">
-        <h1 id="doggoRoni">Doggo-roni Pizza</h1>
-        <img id="doggo" src="resources/doggo2.png" alt="cartoon dog">
-        <img id="doggo1" src="resources/doggo3.png" alt="cartoon dog">
-        <img id="doggo2" src="resources/doggo.png" alt="cartoon dog">
-        <img id="doggo3" src="resources/doggo4.webp" alt="cartoon dog">
-        <div id="contactInfo">
-            <h3><a href="https://www.linkedin.com/in/chris4e" class="infoLink">LinkedIn</a></h3>
-            <h3><a href="https://github.com/chrisforee/Doggo-roni" class="infoLink">GitHub</a></h3> 
+
+    <nav>
+        <div class="topdiv">
+            <h1 id="doggoRoni">Doggo-roni Pizza</h1>
+            <img id="doggo" src="resources/doggo2.png" alt="cartoon dog">
+            <img id="doggo1" src="resources/doggo3.png" alt="cartoon dog">
+            <img id="doggo2" src="resources/doggo.png" alt="cartoon dog">
+            <img id="doggo3" src="resources/doggo4.webp" alt="cartoon dog">
+            <div id="contactInfo">
+                <h3><a href="https://www.linkedin.com/in/chris4e" class="infoLink">LinkedIn</a></h3>
+                <h3><a href="https://github.com/chrisforee/Doggo-roni" class="infoLink">GitHub</a></h3> 
         </div>
-    </div>
-    <div id="mainCard">
-        <div id="createFormBlock">
-            <form class="dogImagesForm" onsubmit="doggoFormHandler(event)">
+    </nav>
+
+    <div id="all-sections">
+        <section id="create">
+            <form class="doggoForm" onsubmit="doggoFormHandler(event)">
                 <div id="step1">
-                    <h2 class="text-center">Create <span class="fw-bolder" id="doggoSpan">Doggo-roni Pizza</span></h2>
+                    <h2 class="text-center">Create a <span class="fw-bolder" id="doggoSpan">Doggo-roni Pizza</span></h2>
                     <hr>
                     <h3 class="fst-italic text-center">Step 1) How many Doggo-roni?</h3>
                     <div class="input-group mb-3">
                         <span class="input-group-text">I want</span>
-                        <select onchange="addDoggo()" class="form-select text-center" id="numberOfDogs" name="numberOfDogs">
-                            <option value="">Select a number</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                        </select>
+                        <input type="number" min="1" max="12" id="num" name="num" class="form-control text-center" oninput="addDoggo()">
                         <span class="input-group-text">Doggo-roni</span>
                     </div>
                 </div>
@@ -72,7 +61,7 @@
                     </div>
                 </div>
             </form>
-        </div>
+        </section>
         <div class="pizzaBlock">
         </div>
     </div>
