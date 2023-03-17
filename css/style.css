@@ -5,7 +5,7 @@
 }
 
 /* ======> navBar elements <====== */
-#navBar{
+.topdiv {
     padding: 10px;
     /* margin: 25px; */
     display: flex;
@@ -35,13 +35,14 @@
     color: black;
 }
 /* ==========> Main container elements <=========== */
-#mainCard{
+#all-sections {
     display: flex;
     align-items:flex-start;
     justify-content:space-around;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-#createFormBlock{
+
+#create {
     padding: 10px;
     margin: 25px;
     height: 700px;
@@ -51,6 +52,7 @@
     background-color:rgb(3,146,70,.5);
     box-shadow: 5px 5px 3px grey;
 }
+
 #doggoSpan{
     font-family:'BhuTuka Expanded One', cursive;
     animation: blinker 1.5s linear infinite;
