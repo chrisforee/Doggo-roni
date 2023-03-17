@@ -1,10 +1,10 @@
 // Dog image counter in Create Form
 function addDoggo(){
-    let numberOfDoggos = document.querySelector("#numberOfDogs").value;
+    let num = document.querySelector("#num").value;
     let doggosDiv = document.querySelector(".doggosAdded");
     doggosDiv.innerHTML = "";
-    let doggoCounter = numberOfDoggos;
-    while(doggoCounter > 0){
+    let doggoCounter = num;
+    while(doggoCounter > 0 & doggoCounter < 13){
         doggosDiv.innerHTML += 
         `<div class ="createDogImageContainer">
         <img src="resources/doggo.png" alt="cartoon dog" class="dogImage"/>
@@ -12,23 +12,23 @@ function addDoggo(){
         doggoCounter--;
     }
     console.log("addDoggo function success")
-    console.log(`${numberOfDoggos} doggos added`);
+    console.log(`${num} doggos loaded`);
 }
 
 // Dogs API call 
 async function doggoFormHandler(event){
     event.preventDefault();
-    const numberOfDogs = document.querySelector("#numberOfDogs").value;
+    const num = document.querySelector("#num").value;
     const errorDiv = document.querySelector(".errorDiv");
     errorDiv.innerHTML = "";
-    if(numberOfDogs == 0 || null){
+    if(num == 0 || null || num > 12){
         errorDiv.innerHTML += `
         <div class ="errorDiv">
-        <p>Must select at least 1 Doggo-roni</p>
+        <p>Doggoroni must be between 1 - 12</p>
         </div>`
     }
     else{
-    const URL = `https://dog.ceo/api/breeds/image/random/${numberOfDogs}`
+    const URL = `https://dog.ceo/api/breeds/image/random/${num}`
     const settings = {
         method : "GET"
     }
@@ -45,7 +45,7 @@ async function doggoFormHandler(event){
         `;
 }    
     console.log("Dogs API success");
-    console.log(`${numberOfDogs} doggos added to pizza`);
+    console.log(`${num} doggos added to pizza`);
 } 
 }
 
